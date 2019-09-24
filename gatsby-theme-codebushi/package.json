@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-theme-docs",
+  "name": "gatsby-theme-codebushi",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
+  "author": "Code Bushi",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
