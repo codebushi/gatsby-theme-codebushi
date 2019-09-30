@@ -1,10 +1,10 @@
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-theme-codebushi`,
-      options: {
-        tailwindConfig: `tailwind.config.js`
-      }
+      resolve: `gatsby-theme-codebushi`
+      // options: {
+      //   tailwindConfig: `tailwind.config.js`
+      // }
     }
   ]
 };
