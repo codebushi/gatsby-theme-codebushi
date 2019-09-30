@@ -1,11 +1,11 @@
-const tailwindcss = require("tailwindcss");
-const path = require("path");
+const tailwindcss = require('tailwindcss');
+const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 module.exports = ({
   tailwindConfig = `${__dirname}/tailwind.config.js`,
-  purgeCSS: { purgeOnly = [path.join(__dirname, "src/css/tailwind.css")], content = [] } = {}
+  purgeCSS: { purgeOnly = [path.join(__dirname, 'src/css/tailwind.css')], content = [] } = {}
 }) => {
-  console.log(tailwindConfig);
   return {
     plugins: [
       `gatsby-plugin-react-helmet`,
@@ -13,7 +13,7 @@ module.exports = ({
       {
         resolve: `gatsby-plugin-postcss`,
         options: {
-          postCssPlugins: [tailwindcss(tailwindConfig), require("autoprefixer")]
+          postCssPlugins: [tailwindcss(tailwindConfig), autoprefixer]
         }
       },
       {
@@ -22,8 +22,8 @@ module.exports = ({
           tailwind: true,
           purgeOnly,
           content: [
-            path.join(__dirname, "src/**/!(*.d).{ts,js,jsx,tsx}"),
-            path.join(process.cwd(), "src/**/!(*.d).{ts,js,jsx,tsx}"),
+            path.join(__dirname, 'src/**/!(*.d).{ts,js,jsx,tsx}'),
+            path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}'),
             ...content
           ]
         }
