@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Code Bushi",
+  "repository": "https://github.com/codebushi/gatsby-theme-document",
   "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme",
+    "gatsby-theme-document",
+    "mdx",
+    "theme-ui",
+    "react"
+  ],
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build"
