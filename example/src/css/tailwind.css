@@ -1,9 +1,5 @@
 @tailwind base;
 
-p {
-  @apply text-3xl mb-8;
-}
-
 @tailwind components;
 
 @tailwind utilities;
