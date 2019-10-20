@@ -1,10 +1,10 @@
 @tailwind base;
 
 a {
-  @apply text-green-600 underline;
+  @apply text-primary underline;
 }
 a:hover {
-  @apply text-green-800;
+  @apply text-primary-darker;
 }
 
 @tailwind components;

@@ -8,7 +8,7 @@ const sizes = {
 const Button = ({ children, className = '', size }) => (
   <button
     type="button"
-    className={`bg-green-700 hover:bg-green-600 text-white rounded ${
+    className={`bg-primary hover:bg-primary-darker text-white rounded ${
       size ? sizes[size] : sizes.normal
     } ${className}`}
   >

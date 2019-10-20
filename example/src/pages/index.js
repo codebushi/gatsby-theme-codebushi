@@ -1,8 +1,14 @@
 import React from 'react';
+import resolveConfig from 'tailwindcss/resolveConfig';
+import tailwindConfig from '../../tailwind.config';
 import Button from '../components/Button';
 import Layout from '../components/Layout';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
+
+const fullConfig = resolveConfig(tailwindConfig);
+
+console.log(fullConfig.theme.colors.gray);
 
 export default () => (
   <Layout>
@@ -35,15 +41,15 @@ export default () => (
         <p className="text-sm uppercase tracking-wider">Our customers get results</p>
         <div className="flex mt-8 lg:px-24">
           <div className="w-1/3">
-            <p className="text-4xl lg:text-6xl font-semibold text-green-600">+400%</p>
+            <p className="text-4xl lg:text-6xl font-semibold text-primary">+400%</p>
             <p className="font-semibold">daily newsletter subscribers</p>
           </div>
           <div className="w-1/3">
-            <p className="text-4xl lg:text-6xl font-semibold text-green-600">+105%</p>
+            <p className="text-4xl lg:text-6xl font-semibold text-primary">+105%</p>
             <p className="font-semibold">paying subscribers</p>
           </div>
           <div className="w-1/3">
-            <p className="text-4xl lg:text-6xl font-semibold text-green-600">+65%</p>
+            <p className="text-4xl lg:text-6xl font-semibold text-primary">+65%</p>
             <p className="font-semibold">page views</p>
           </div>
         </div>
