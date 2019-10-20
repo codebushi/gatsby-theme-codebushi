@@ -1,5 +1,12 @@
 @tailwind base;
 
+a {
+  @apply text-green-600 underline;
+}
+a:hover {
+  @apply text-green-800;
+}
+
 @tailwind components;
 
 @tailwind utilities;

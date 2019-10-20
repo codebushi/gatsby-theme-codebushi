@@ -4,7 +4,7 @@ import Button from './Button';
 const Layout = ({ children }) => {
   return (
     <>
-      <header>
+      <header className="sticky top-0 bg-white shadow">
         <div className="container flex items-center mx-auto py-4 px-8">
           <div>Logo</div>
           <div className="ml-8">Links</div>
