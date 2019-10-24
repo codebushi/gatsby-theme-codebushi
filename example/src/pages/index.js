@@ -1,14 +1,8 @@
 import React from 'react';
-import resolveConfig from 'tailwindcss/resolveConfig';
-import tailwindConfig from '../../tailwind.config';
 import Button from '../components/Button';
 import Layout from '../components/Layout';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
-
-const fullConfig = resolveConfig(tailwindConfig);
-
-console.log(fullConfig.theme.colors.gray);
 
 export default () => (
   <Layout>
@@ -55,19 +49,49 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="pt-10 pb-10 text-center">
+    <section className="mt-10 mb-24 text-center">
       <h2 className="text-3xl lg:text-5xl font-semibold">Use Parse.ly to win with content</h2>
     </section>
-    <section className="py-20 lg:py-40">
-      <div className="container mx-auto px-16 items-center lg:flex">
+    <section className="py-20">
+      <div className="container mx-auto px-16 items-center flex flex-col lg:flex-row">
         <div className="lg:pr-32 xl:pr-48 lg:w-1/2">
-          <h3 className="text-3xl font-semibold">Measure content performance</h3>
-          <p className="mt-8 text-xl font-light leading-loose">
+          <h3 className="text-3xl font-semibold leading-tight">Measure content performance</h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
             Make data-driven decisions with democratized access to content data. Use
             easy-to-understand content analytics, charts, and graphs
           </p>
         </div>
-        <div className="mt-8 lg:mt-0 lg:w-1/2">
+        <div className="mt-10 lg:mt-0 w-full lg:w-1/2">
+          <SvgCharts />
+        </div>
+      </div>
+    </section>
+    <section className="py-20">
+      <div className="container mx-auto px-16 items-center flex flex-col lg:flex-row">
+        <div className="order-last lg:order-first mt-10 lg:mt-0 w-full lg:w-1/2">
+          <SvgCharts />
+        </div>
+        <div className="lg:pl-32 xl:pl-48 lg:w-1/2">
+          <h3 className="text-3xl font-semibold leading-tight">
+            Understand reader engagement and behavior
+          </h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            Understand what's resonating with readers in real-time, or analyze historical trends
+            across audience segments to discover new opportunities.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section className="py-20">
+      <div className="container mx-auto px-16 items-center flex flex-col lg:flex-row">
+        <div className="lg:pr-32 xl:pr-48 lg:w-1/2">
+          <h3 className="text-3xl font-semibold leading-tight">Grow your business</h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            Improve key metrics like engagement, conversion, and retention to drive revenue and
+            impact. Double down on what works and meet your goals.
+          </p>
+        </div>
+        <div className="mt-10 lg:mt-0 w-full lg:w-1/2">
           <SvgCharts />
         </div>
       </div>
