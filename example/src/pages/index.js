@@ -5,6 +5,7 @@ import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
+import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 
@@ -96,15 +97,11 @@ export default () => (
       <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
         <div className="flex -mx-3">
-          <div className="flex-1 px-3">
-            <CustomerCard />
-          </div>
-          <div className="flex-1 px-3">
-            <CustomerCard />
-          </div>
-          <div className="flex-1 px-3">
-            <CustomerCard />
-          </div>
+          {customerData.map(customer => (
+            <div key={customer.customerName} className="flex-1 px-3">
+              <CustomerCard customer={customer} />
+            </div>
+          ))}
         </div>
       </div>
     </section>
