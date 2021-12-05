@@ -1,3 +1,5 @@
+// require = require('esm')(module);
+
 module.exports = {
   plugins: [
     {
