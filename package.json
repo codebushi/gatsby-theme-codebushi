@@ -1,26 +1,33 @@
 {
   "name": "gatsby-starter-theme-workspace",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "develop": "yarn workspace example develop",
-    "build": "yarn workspace example build"
+    "develop-example": "yarn workspace example develop",
+    "build-example": "yarn workspace example build",
+    "develop-starter": "yarn workspace gatsby-starter-lander develop",
+    "build-starter": "yarn workspace gatsby-starter-lander build"
   },
   "workspaces": [
+    "gatsby-starter-lander",
     "gatsby-theme-codebushi",
     "example"
   ],
   "devDependencies": {
-    "eslint": "^6.2.2",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react-hooks": "^2.0.1",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "prettier": "^1.18.2"
+    "eslint": "^8.4.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "prettier": "^2.5.1"
+  },
+  "volta": {
+    "node": "16.13.0",
+    "yarn": "1.22.17"
   }
 }
