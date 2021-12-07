@@ -5,10 +5,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "develop": "yarn workspace example develop",
-    "build": "yarn workspace example build"
+    "develop-example": "yarn workspace example develop",
+    "build-example": "yarn workspace example build",
+    "develop-starter": "yarn workspace gatsby-starter-lander develop",
+    "build-starter": "yarn workspace gatsby-starter-lander build"
   },
   "workspaces": [
+    "gatsby-starter-lander",
     "gatsby-theme-codebushi",
     "example"
   ],
